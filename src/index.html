@@ -5,8 +5,461 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion Tailwind Project</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="bg-pink-900 p-4 text-center text-white">Hello World!</h1>
+  <body class="font-roboto">
+    <header class="bg-[#FFFBF0]">
+      <nav
+        class="container flex items-center justify-between px-4 pt-7 md:px-0 md:pt-11"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            class="h-[1.625rem] w-9 md:h-10 md:w-14"
+            src="../images/logo.svg"
+            alt=""
+          />
+          <h3 class="text-xl font-bold text-title md:text-25">
+            <span class="text-olive-light">Penguin</span> Fashion
+          </h3>
+        </div>
+        <ul
+          class="hidden gap-[3.5625rem] text-base font-medium text-link md:flex"
+        >
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#" class="">Product</a></li>
+          <li><a href="#" class="">About us</a></li>
+          <li><a href="#" class="">Contact us</a></li>
+        </ul>
+
+        <button class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <path
+              d="M5 16.25C5.69036 16.25 6.25 15.6904 6.25 15C6.25 14.3096 5.69036 13.75 5 13.75C4.30964 13.75 3.75 14.3096 3.75 15C3.75 15.6904 4.30964 16.25 5 16.25Z"
+              fill="black"
+            />
+            <path
+              d="M25.075 13.75H9.925C9.27607 13.75 8.75 14.2761 8.75 14.925V15.075C8.75 15.7239 9.27607 16.25 9.925 16.25H25.075C25.7239 16.25 26.25 15.7239 26.25 15.075V14.925C26.25 14.2761 25.7239 13.75 25.075 13.75Z"
+              fill="black"
+            />
+            <path
+              d="M25.075 20H4.925C4.27607 20 3.75 20.5261 3.75 21.175V21.325C3.75 21.9739 4.27607 22.5 4.925 22.5H25.075C25.7239 22.5 26.25 21.9739 26.25 21.325V21.175C26.25 20.5261 25.7239 20 25.075 20Z"
+              fill="black"
+            />
+            <path
+              d="M25.075 7.5H4.925C4.27607 7.5 3.75 8.02607 3.75 8.675V8.825C3.75 9.47393 4.27607 10 4.925 10H25.075C25.7239 10 26.25 9.47393 26.25 8.825V8.675C26.25 8.02607 25.7239 7.5 25.075 7.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <div
+        class="container flex flex-col items-center justify-between pb-16 pt-5 md:flex-row"
+      >
+        <div class="basis-[49%] self-start p-4 md:self-center">
+          <h1 class="text-40 font-bold uppercase text-title md:text-80">
+            <span class="text-orange">Be the Penguins</span> <br />
+            of Winter
+          </h1>
+          <p
+            class="mb-2 max-w-[22rem] text-base font-normal leading-26 text-para"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button class="btn mt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                fill="white"
+              />
+              <path
+                d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                fill="white"
+              />
+              <path
+                d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                fill="white"
+              />
+            </svg>
+            buy now
+          </button>
+        </div>
+
+        <div class="mt-11 basis-[46%] px-4 md:mt-0 md:px-0">
+          <img class="w-full" src="../images/model.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ? woman collection -->
+      <section class="container mt-12 px-4 md:px-0">
+        <h3
+          class="mb-7 text-center font-bebas text-36 uppercase text-title md:mb-5 md:text-left md:text-48"
+        >
+          woman Jacket
+        </h3>
+
+        <!-- ? card container -->
+        <div class="grid gap-6 md:grid-cols-3 md:gap-8">
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-1.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">
+                Yellow Coat Jacket
+              </h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-2.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">Ladies Jacket</h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-3.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">
+                Woman Leather Jacket
+              </h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? man collection -->
+      <section class="container mt-96 px-4 md:mt-99 md:px-0">
+        <h3
+          class="mb-7 text-center font-bebas text-48 uppercase text-title md:mb-5 md:text-left"
+        >
+          man Jacket
+        </h3>
+
+        <!-- ? card container -->
+        <div class="grid gap-6 md:grid-cols-3 md:gap-8">
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-4.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">
+                Yellow Coat Jacket
+              </h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-5.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">Ladies Jacket</h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-20 p-5 shadow-card">
+            <figure class="rounded-20 bg-[#F1F1F1] p-6">
+              <img class="max-w-full" src="../images/jacket-6.png" alt="" />
+            </figure>
+
+            <div class="mt-5">
+              <h3 class="text-2xl font-bold leading-normal">
+                Woman Leather Jacket
+              </h3>
+              <p class="mt-3 max-w-[299px] text-base text-para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <h2 class="text-36 font-900 text-orange">$234</h2>
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.08 6.99998C20.9072 6.7006 20.6598 6.45111 20.3618 6.27585C20.0639 6.10059 19.7256 6.00554 19.38 5.99998H6.58L6 3.73998C5.9414 3.52181 5.81066 3.32992 5.62908 3.19555C5.44749 3.06118 5.22576 2.99224 5 2.99998H3C2.73478 2.99998 2.48043 3.10533 2.29289 3.29287C2.10536 3.48041 2 3.73476 2 3.99998C2 4.26519 2.10536 4.51955 2.29289 4.70708C2.48043 4.89462 2.73478 4.99998 3 4.99998H4.24L7 15.26C7.0586 15.4781 7.18934 15.67 7.37092 15.8044C7.55251 15.9388 7.77424 16.0077 8 16H17C17.1847 15.9994 17.3656 15.9477 17.5227 15.8507C17.6798 15.7536 17.8069 15.6149 17.89 15.45L21.17 8.88998C21.3122 8.59199 21.3783 8.26345 21.3626 7.93366C21.3469 7.60387 21.2498 7.2831 21.08 6.99998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7.5 21C8.32843 21 9 20.3284 9 19.5C9 18.6716 8.32843 18 7.5 18C6.67157 18 6 18.6716 6 19.5C6 20.3284 6.67157 21 7.5 21Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 21C18.3284 21 19 20.3284 19 19.5C19 18.6716 18.3284 18 17.5 18C16.6716 18 16 18.6716 16 19.5C16 20.3284 16.6716 21 17.5 21Z"
+                      fill="white"
+                    />
+                  </svg>
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? -->
+      <section
+        class="md:mt-130 pb-164 md:pb-200 container mt-99 flex flex-col-reverse flex-wrap items-center justify-between px-4 md:flex-row md:px-0"
+      >
+        <div class="mt-12 max-w-[490px] basis-[43%] space-y-4 md:mt-0">
+          <!-- ? single card -->
+          <div
+            class="flex flex-col items-center gap-4 rounded-20 p-7 shadow-card md:flex-row md:gap-9"
+          >
+            <figure class="w-[78px]">
+              <img class="w-full" src="../icons/house.png" alt="" />
+            </figure>
+
+            <div class="">
+              <h3
+                class="mb-2 text-center text-2xl font-bold text-title md:mb-[0.875rem] md:text-left"
+              >
+                Find the Perfect Fit
+              </h3>
+              <p class="text-center text-base font-normal md:text-left">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+
+          <!-- ? single card -->
+          <div
+            class="flex flex-col items-center gap-4 rounded-20 p-7 shadow-card md:flex-row md:gap-9"
+          >
+            <figure class="w-[78px]">
+              <img class="w-full" src="../icons/box.png" alt="" />
+            </figure>
+
+            <div class="">
+              <h3
+                class="mb-2 text-center text-2xl font-bold text-title md:mb-[0.875rem] md:text-left"
+              >
+                Free Exchanges
+              </h3>
+              <p class="text-center text-base font-normal md:text-left">
+                One of the many reasons you can shop with peace of mind.
+              </p>
+            </div>
+          </div>
+
+          <!-- ? single card -->
+          <div
+            class="flex flex-col items-center gap-4 rounded-20 p-7 shadow-card md:flex-row md:gap-9"
+          >
+            <figure class="w-[78px]">
+              <img class="w-full" src="../icons/question.png" alt="" />
+            </figure>
+
+            <div class="">
+              <h3
+                class="mb-2 text-center text-2xl font-bold text-title md:mb-[0.875rem] md:text-left"
+              >
+                Contact Our Seller
+              </h3>
+              <p class="text-center text-base font-normal md:text-left">
+                They are here to help you. That's quite literally what we pay
+                them for.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="basis-[53%]">
+          <img
+            class="w-full object-cover"
+            src="../images/shopping.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

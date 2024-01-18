@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-18 px-34 from-olive-light to-olive-dark rounded-10 flex items-center gap-2 bg-gradient-to-r from-0% to-100% font-medium uppercase text-white;
+  }
+}
